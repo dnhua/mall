@@ -10,7 +10,7 @@
 
 初始化项目 <br>
 初始化git <br>
-推送 <br>
+推送 <br> 
 
 1. 在github上新建一个项目mall <br>
 2. 在idea中创建README.md和.gitignore文件 <br>
