@@ -18,7 +18,7 @@ import javax.servlet.http.HttpSession;
  * Created by geely
  */
 @Controller
-@RequestMapping("/user/")
+@RequestMapping("/user/")   //打到/user的命名空间下
 public class UserController {
 
 
@@ -34,7 +34,7 @@ public class UserController {
      * @return
      */
     @RequestMapping(value = "login.do",method = RequestMethod.POST)
-    @ResponseBody
+    @ResponseBody   //返回的时候自动通过springmvc的jackson插件将返回值序列化为json
     public ServerResponse<User> login(String username, String password, HttpSession session){
         ServerResponse<User> response = iUserService.login(username,password);
         if(response.isSuccess()){
@@ -62,7 +62,6 @@ public class UserController {
     public ServerResponse<String> checkValid(String str,String type){
         return iUserService.checkValid(str,type);
     }
-
 
     @RequestMapping(value = "get_user_info.do",method = RequestMethod.POST)
     @ResponseBody
@@ -112,6 +111,7 @@ public class UserController {
     @ResponseBody
     public ServerResponse<User> update_information(HttpSession session,User user){
         User currentUser = (User)session.getAttribute(Const.CURRENT_USER);
+        //防止横向越权
         if(currentUser == null){
             return ServerResponse.createByErrorMessage("用户未登录");
         }

@@ -5,7 +5,7 @@ import org.springframework.util.StringUtils;
 import java.security.MessageDigest;
 
 /**
- * Created by geely
+ * Created by dnhua
  */
 public class MD5Util {
 

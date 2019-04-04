@@ -1,7 +1,8 @@
 package com.mmall.common;
 
 /**
- * Created by geely
+ * Created by dnhua
+ * 状态枚举类
  */
 public enum ResponseCode {
 

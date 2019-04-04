@@ -195,4 +195,6 @@
             <property name="defaultEncoding" value="UTF-8"></property>
         </bean>
         ```
-    
+6. logback的配置
+7. ftp服务器配置
+8. 自动编译的配置等idea工具配置
