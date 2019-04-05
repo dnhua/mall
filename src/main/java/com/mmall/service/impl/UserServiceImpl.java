@@ -14,7 +14,7 @@ import org.springframework.util.StringUtils;
 import java.util.UUID;
 
 /**
- * Created by geely
+ * Created by dnhua
  */
 @Service("iUserService")
 public class UserServiceImpl implements IUserService {
@@ -29,13 +29,12 @@ public class UserServiceImpl implements IUserService {
         if(resultCount == 0 ){
             return ServerResponse.createByErrorMessage("用户名不存在");
         }
-
+        //密码登陆MD5
         String md5Password = MD5Util.MD5EncodeUtf8(password);
         User user  = userMapper.selectLogin(username,md5Password);
         if(user == null){
             return ServerResponse.createByErrorMessage("密码错误");
         }
-
         user.setPassword(org.apache.commons.lang3.StringUtils.EMPTY);
         return ServerResponse.createBySuccess("登录成功",user);
     }
