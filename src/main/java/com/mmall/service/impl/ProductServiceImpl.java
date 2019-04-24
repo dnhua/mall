@@ -25,7 +25,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by geely
+ * Created by dnhua
  */
 @Service("iProductService")
 public class ProductServiceImpl implements IProductService {
@@ -40,6 +40,11 @@ public class ProductServiceImpl implements IProductService {
     @Autowired
     private ICategoryService iCategoryService;
 
+    /**
+     * 保存或者更新产品
+     * @param product
+     * @return
+     */
     public ServerResponse saveOrUpdateProduct(Product product){
         if(product != null)
         {
@@ -91,6 +96,8 @@ public class ProductServiceImpl implements IProductService {
         if(product == null){
             return ServerResponse.createByErrorMessage("产品已下架或者删除");
         }
+        //VO对象--value object
+        //pojo->bo(business object)->vo(view object)
         ProductDetailVo productDetailVo = assembleProductDetailVo(product);
         return ServerResponse.createBySuccess(productDetailVo);
     }
