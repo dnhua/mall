@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import javax.servlet.http.HttpSession;
 
 /**
- * Created by geely
+ * Created by dnhua
  */
 @Controller
 @RequestMapping("/user/")   //打到/user的命名空间下

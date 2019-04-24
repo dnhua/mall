@@ -10,7 +10,7 @@ import java.io.IOException;
 import java.util.List;
 
 /**
- * Created by geely
+ * Created by dnhua
  */
 public class FTPUtil {
 
@@ -44,7 +44,7 @@ public class FTPUtil {
                 ftpClient.changeWorkingDirectory(remotePath);
                 ftpClient.setBufferSize(1024);
                 ftpClient.setControlEncoding("UTF-8");
-                ftpClient.setFileType(FTPClient.BINARY_FILE_TYPE);
+                ftpClient.setFileType(FTPClient.BINARY_FILE_TYPE);  //有防止乱码的功能
                 ftpClient.enterLocalPassiveMode();
                 for(File fileItem : fileList){
                     fis = new FileInputStream(fileItem);
