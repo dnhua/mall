@@ -12,7 +12,7 @@ import java.util.Date;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Cart {
+public class Cart{
     private Integer id;
 
     private Integer userId;
