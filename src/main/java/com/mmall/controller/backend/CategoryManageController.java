@@ -40,7 +40,6 @@ public class CategoryManageController {
             //是管理员
             //增加我们处理分类的逻辑
             return iCategoryService.addCategory(categoryName,parentId);
-
         }else{
             return ServerResponse.createByErrorMessage("无权限操作,需要管理员权限");
         }

@@ -29,7 +29,8 @@ public class CategoryServiceImpl implements ICategoryService {
     private CategoryMapper categoryMapper;
 
     public ServerResponse addCategory(String categoryName,Integer parentId){
-        if(parentId == null || StringUtils.isBlank(categoryName)){
+        //校验参数
+        if (parentId == null || StringUtils.isBlank(categoryName)) {
             return ServerResponse.createByErrorMessage("添加品类参数错误");
         }
 
