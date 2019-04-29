@@ -20,13 +20,13 @@ a. 导致服务器请求(负载)不平均(完全依赖ip hash的结果)
 
 # 二、tomcat单机部署多应用
 1. 修改/etc/profile增加tomcat环境变量
-<img src="https://raw.githubusercontent.com/dnhua/mall/tomcat2.0/file-study/img/tomcat1.PNG" width=50% height=50%/>
+<img src="https://raw.githubusercontent.com/dnhua/mall/v2.0/file-study/img/tomcat1.PNG" width=50% height=50%/>
 2. 第一个tomcat不变
 3. 打开第二个tomcat目录下bin下catalina.sh，找到 # OS specific support. $var _must_be set to either true or false
 4. 在刚刚找到的那个位置编辑，新增配置，并保存退出
 <br>export CATALINA_BASE=$CATALINA_2_BASE
 <br>export CATALINA_HOME=$CATALINA_2_HOME
 5. 打开第二个tomcat的conf目录下server.xml，三个端口需要修改 <br>
-<img src="https://raw.githubusercontent.com/dnhua/mall/tomcat2.0/file-study/img/maven_package.PNG" width=50% height=50%/>
-<img src="https://raw.githubusercontent.com/dnhua/mall/tomcat3.0/file-study/img/maven_package.PNG" width=50% height=50%/>
-<img src="https://raw.githubusercontent.com/dnhua/mall/tomcat4.0/file-study/img/maven_package.PNG" width=50% height=50%/>
+<img src="https://raw.githubusercontent.com/dnhua/mall/v2.0/file-study/img/tomcat2.PNG" width=50% height=50%/>
+<img src="https://raw.githubusercontent.com/dnhua/mall/v2.0/file-study/img/tomcat3.PNG" width=50% height=50%/>
+<img src="https://raw.githubusercontent.com/dnhua/mall/v2.0/file-study/img/tomcat4.PNG" width=50% height=50%/>
