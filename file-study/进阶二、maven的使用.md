@@ -15,6 +15,13 @@
 1. 避免人工修改的弊端
 2. 轻松分环境编译、打包、部署
 
-## 环境隔离配置及原理
+## 2.2 环境隔离配置及原理
 1. pom.xml中build节点增加
-![maven_build](file-study/img/maven_build.PNG)
+![maven_build](https://raw.githubusercontent.com/dnhua/mall/v2.0/file-study/img/maven_build.PNG)
+2. pom.xml中增加profiles节点
+![maven_build](https://raw.githubusercontent.com/dnhua/mall/v2.0/file-study/img/profiles.PNG)
+3. 新建对应的文件夹，并把要隔离的文件分开，公共的留下
+![maven_build](https://raw.githubusercontent.com/dnhua/mall/v2.0/file-study/img/maven_dir.PNG)
+4. import change
+5. maven环境隔离编译打包命令
+![maven_build](https://raw.githubusercontent.com/dnhua/mall/v2.0/file-study/img/maven_package.PNG)
