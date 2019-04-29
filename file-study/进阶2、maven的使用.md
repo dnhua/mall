@@ -23,5 +23,5 @@
 3. 新建对应的文件夹，并把要隔离的文件分开，公共的留下
 ![maven_build](https://raw.githubusercontent.com/dnhua/mall/v2.0/file-study/img/maven_dir.PNG)
 4. import change
-5. maven环境隔离编译打包命令
-![maven_build](https://raw.githubusercontent.com/dnhua/mall/v2.0/file-study/img/maven_package.PNG)
+5. maven环境隔离编译打包命令 <br>
+<img src="https://raw.githubusercontent.com/dnhua/mall/v2.0/file-study/img/maven_package.PNG" width=50% height=50%/>
