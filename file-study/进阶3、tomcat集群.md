@@ -30,3 +30,18 @@ a. 导致服务器请求(负载)不平均(完全依赖ip hash的结果)
 <img src="https://raw.githubusercontent.com/dnhua/mall/v2.0/file-study/img/tomcat2.PNG" width=50% height=50%/>
 <img src="https://raw.githubusercontent.com/dnhua/mall/v2.0/file-study/img/tomcat3.PNG" width=50% height=50%/>
 <img src="https://raw.githubusercontent.com/dnhua/mall/v2.0/file-study/img/tomcat4.PNG" width=50% height=50%/>
+6. 解决本地机无法访问虚拟机tomcat
+<br>vim /etc/sysconfig/iptables添加8080和9080端口并重启防火墙服务 代码：service iptables restart
+
+# 三、Nginx负载均衡配置，常用策略，场景以及特点
+1. 轮询(默认)
+2. 权重
+3. ip hash
+<br>优点：能实现同一个用户访问同一个服务器
+<br>缺点：根据ip hash不一定平均
+4. url hash(第三方)
+<br>优点：能实现统一分服务器访同一个服务器
+<br>缺点：根据url hash分配请求会不平均，请求频繁的url会请求到同一个服务器上
+5. fair(第三方)
+特点：按照后端服务器的响应时间来分配请求，响应时间短的优先分配
+
