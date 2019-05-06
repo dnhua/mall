@@ -20,3 +20,7 @@
 ## Redis分布式环境配置
 <br><img src="https://raw.githubusercontent.com/dnhua/mall/v2.0/file-study/img/redis1.PNG" width=50% height=50%/>
 
+## 实战
+1. 启动两个redis
+2. 编写RedisShardedPool.java
+3. 编写RedisShardedPoolUtil.java类，替换相应的代码
