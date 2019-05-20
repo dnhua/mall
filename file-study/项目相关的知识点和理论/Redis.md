@@ -24,11 +24,11 @@ JedisPoolConfig -> GenericObjectPoolConfig -> BaseObjectPoolConfig
 * redisPort-连接的port
 
 ## 封装一个RedisPoolUtil的工具类
-<img src="https://raw.githubusercontent.com/dnhua/mall/v2.0/file-study/img/RedisPoolUtil.PNG" width=50% height=50%/>
+<img src="https://raw.githubusercontent.com/dnhua/mall/v2.0/file-study/img/RedisPoolUtil.png" width=50% height=50%/>
 
 ## 更新代码
 ### 封装一个CookieUtil类
-<img src="https://raw.githubusercontent.com/dnhua/mall/v2.0/file-study/img/CookieUtil.PNG" width=50% height=50%/>
+<img src="https://raw.githubusercontent.com/dnhua/mall/v2.0/file-study/img/CookieUtil.png" width=50% height=50%/>
 
 #### readLoginToken(HttpServletRequest request)
 这个方法其实没啥，就是从cookie里面拿出来我们的token的string。
