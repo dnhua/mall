@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by geely
+ * Created by dnhua
  */
 public class RedisShardedPool {
     private static ShardedJedisPool pool;//sharded jedis连接池
