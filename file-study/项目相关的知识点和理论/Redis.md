@@ -94,6 +94,19 @@ public static final Pattern DEFAULT_KEY_TAG_PATTERN = Pattern
 	    .compile("\\{(.+?)\\}");
 ```
 
+# Filter重置session有效期
+配置
+```xml
+<filter>
+        <filter-name>sessionExpireFilter</filter-name>
+        <filter-class>com.mmall.controller.common.SessionExpireFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>sessionExpireFilter</filter-name>
+        <url-pattern>*.do</url-pattern>
+    </filter-mapping>
+```
+
 ## hash一致性算法
 ### 一致性hash算法
 1. 环形hash空间
